@@ -40,7 +40,7 @@ def main():
 
 
                 print ("adate: "+adate)
-                cur.execute("INSERT INTO banknifty1 (type, expirydate,strikeprice ,striktime, d,e,f,g,h,i,entity)"
+                cur.execute("INSERT INTO banknifty1 (type, expirydate,strikeprice ,striktime, open,high,low,close,Volume,openInterest,entity)"
                             "VALUES ('"+type+"', '"+actual_expiry_date+"', '"+strikeprice+"','"+row[2]+"', '"+row[3]+"','"+row[4]+"','"+row[5]+"','"+row[6]+"','"+row[7]+"','"+row[8]+"','"+entity+"');")
                 con.commit()
             except Exception as e:
